@@ -1,0 +1,13 @@
+export const getValidMoves = (board, cell) => {
+    const {row,col,piece} = cell
+  const { type, player } = cell.piece;
+  const moves = [];
+  const directions = {
+    pyada: player === "white" ? [-1, 0] : [1, 0],
+  };
+  if (type === "pyada") {
+    const movement = directions.pyada;
+    const startRow = player === "white" ? 6 : 1;
+    if(!board[movement[0] + ])
+  }
+};

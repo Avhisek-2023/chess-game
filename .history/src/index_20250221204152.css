@@ -1,0 +1,14 @@
+
+@import "tailwindcss";
+
+.addBg {
+    border: 3px solid #5e4911;
+}
+.addBg1 {
+    background-color: rgba(234, 192, 134, 0.8); /* Warm gold-brown highlight */
+    border: 2px solid rgb(160, 90, 44); /* Darker brown outline */
+    transition: all 0.2s ease-in-out;
+}
+
+
+  

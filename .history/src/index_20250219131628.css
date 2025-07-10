@@ -1,0 +1,19 @@
+
+@import "tailwindcss";
+
+.addBg {
+    border: 3px solid #5e4911;
+}
+.addBg1 {
+    background-color: rgba(0, 255, 0, 0.5); /* Semi-transparent green */
+    border: 2px solid rgba(0, 200, 0, 0.8); /* Slightly darker green border */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Soft glowing effect */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .addBg1:hover {
+    background-color: rgba(0, 255, 0, 0.7); /* Slightly stronger green on hover */
+    border-color: rgba(0, 255, 0, 1);
+  }
+   
+  

@@ -1,0 +1,27 @@
+import { useBoardContext } from "../contexts/BoardContextProvider";
+
+const Sidebar = () => {
+  const { moveHistory, sidebar, clickSidebar } = useBoardContext();
+
+  return (
+    <div
+      className={`fixed top-0 right-0 h-full w-64 bg-gray-800 text-white shadow-lg transition-transform duration-300 ${
+        sidebarOpen ? "translate-x-0" : "translate-x-full"
+      }`}
+    >
+      <button className="absolute top-2 left-2 text-xl" onClick={toggleSidebar}>
+        ✖
+      </button>
+      <h2 className="text-lg font-bold p-4">Move History</h2>
+      <ul className="p-4">
+        {moveHistory.map((move, index) => (
+          <li key={index} className="border-b py-2">
+            {index + 1}. {move}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Sidebar;
